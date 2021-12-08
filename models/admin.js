@@ -1,12 +1,8 @@
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
-const UserSchema = Schema({
+const AdminSchema = Schema({
   username: {
-    type: String,
-    required: true,
-  },
-  email: {
     type: String,
     required: true,
   },
@@ -16,4 +12,4 @@ const UserSchema = Schema({
   },
 });
 
-export const User = mongoose.model("User", UserSchema);
+export const Admin = mongoose.model("Admin", AdminSchema);
